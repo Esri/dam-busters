@@ -1,5 +1,6 @@
 import { nodeConfig } from './configNode.js';
 import { log } from './logger.js';
+import throttle from 'lodash.throttle';
 // This sets shared state variables used across the scroll-driven story map
 let isDocked = false;
 let dockStartScroll = null;
@@ -13,16 +14,24 @@ log("Scroll listener initialized.");
 // --- Utility Functions ---
 // DOM readiness, panel height, scroll bounds...
 
-// Polls the DOM every 100ms until an element matching the selector is found,
-// then clears the interval and executes the callback with the found element.
+// Waits for an element matching the selector to appear in the DOM,
+// then executes the callback with the found element. Uses MutationObserver for efficiency.
 function waitForElement(selector, callback) {
-  const interval = setInterval(() => {
+  const element = document.querySelector(selector);
+  if (element) {
+    callback(element);
+    return;
+  }
+
+  const observer = new MutationObserver(() => {
     const element = document.querySelector(selector);
     if (element) {
-      clearInterval(interval);
+      observer.disconnect();
       callback(element);
     }
-  }, 100);
+  });
+
+  observer.observe(document.body, { childList: true, subtree: true });
 }
 
 // Calculates the effective height of a narrative panel element,
@@ -157,7 +166,7 @@ function watchForIframeForever(nodeSelector) {
 function setupScrollListener(nodeSelector) {
   const iframeSelector = `${nodeSelector} iframe`;
 
-  window.addEventListener("scroll", () => {
+  const throttledScrollHandler = throttle(() => {
     const currentScroll = window.scrollY;
     scrollDirection =
       currentScroll > lastScrollY
@@ -201,6 +210,8 @@ function setupScrollListener(nodeSelector) {
       }
     }
   });
+
+  window.addEventListener("scroll", throttledScrollHandler, { passive: true });
 }
 
 // --- Initialization ---

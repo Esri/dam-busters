@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@arcgis/map-components": "4.32",
+    "lodash.throttle": "^4.1.1",
     "simple-parallax-js": "^6.3.3"
   }
 }
