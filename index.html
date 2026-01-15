@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dam Busters</title>
+  <meta name="description" content="The story of the daring raid on Germany’s dams in May 1943, exploring 617 Squadron’s mission, its engineering, and its lasting impact.">
+  <meta name="keywords" content="Dam Busters, WWII, World War II, Operation Chastise, history, story map, interactive map, ArcGIS">
+  <meta name="author" content="Warren Davison">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://warrendz.github.io/dam-busters/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://warrendz.github.io/dam-busters/">
+  <meta property="og:title" content="Dam Busters">
+  <meta property="og:description" content="The story of the daring raid on Germany’s dams in May 1943, exploring 617 Squadron’s mission, its engineering, and its lasting impact.">
+  <meta property="og:image" content="https://warrendz.github.io/dam-busters/assets/story_thumbnail.png">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://warrendz.github.io/dam-busters/">
+  <meta property="twitter:title" content="Dam Busters">
+  <meta property="twitter:description" content="The story of the daring raid on Germany’s dams in May 1943, exploring 617 Squadron’s mission, its engineering, and its lasting impact.">
+  <meta property="twitter:image" content="https://warrendz.github.io/dam-busters/assets/story_thumbnail.png">
+  
+  <!-- Favicon (assuming you have one in public/) -->
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Dam Busters" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  <!-- Theme color for mobile browsers -->
+  <meta name="theme-color" content="#007acc">
+
+  <script type="module" src="./src/main.js"></script>
+  <script type="module" src="./src/scrollListener.js"></script>
+</head>
+
+<body>
+  <!-- Simplified scene container: contains the scene layers and an optional foreground fill -->
+  <div id="scene">
+    <div id="scene-banner">
+      <img src="./assets/Cover_1.png" class="scene-img" id="scene-layer1" alt="Background Layer">
+      <img src="./assets/Cover_2.png" class="scene-img" id="scene-layer2" alt="Midground Layer">
+      <img src="./assets/Cover_3.png" class="scene-img" id="scene-layer3" alt="Foreground Layer">
+      <img src="./assets/Cover_4.png" class="scene-img" id="scene-layer4" alt="Top Layer">
+      <div id="solid-fill" aria-hidden="true"></div>
+    </div>
+
+  </div>
+  <!-- Embedded story -->
+  <div class="storymaps-root"></div>
+  <script type="module" src="./src/configStory.js"></script>
+
+</body>
+
+</html>
