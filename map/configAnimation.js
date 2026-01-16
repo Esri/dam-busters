@@ -7,7 +7,7 @@ export const animationConfig = {
   zoom: "4",
   center: "-0.551002, 53.307870",
   timePlayRate: "250",
-  debugMode: true,
+  debugMode: false,
   disableMapNav: true,
   mapFit: "extent",
   mapChoreography: "../mapChoreography.json",
