@@ -1516,7 +1516,7 @@
     },
     "layerVisibility": {
       "layersOn": ["Lancaster", "Upkeep", "Mohne dam | Highlight"],
-      "layersOff": ["Lancaster | Outlines", "Lancaster | Highlight", "Upkeep | Highlight", "Upkeep | Path", "Upkeep | Sunk"]
+      "layersOff": ["Lancaster | Outlines", "Lancaster | Highlight", "Upkeep | Highlight", "Upkeep | Path"]
     }
   },
   {
@@ -1560,7 +1560,7 @@
   },
     "layerVisibility": {
       "layersOn": ["Lancaster", "Upkeep", "Mohne dam | Highlight"],
-      "layersOff": ["Lancaster | Outlines", "Lancaster | Highlight", "Upkeep | Highlight", "Upkeep | Path", "Upkeep | Sunk"]
+      "layersOff": ["Lancaster | Outlines", "Lancaster | Highlight", "Upkeep | Highlight", "Upkeep | Path"]
     }
   },
   {
@@ -1584,7 +1584,7 @@
   },
     "layerVisibility": {
       "layersOn": ["Lancaster", "Upkeep", "Mohne dam | Highlight"],
-      "layersOff": ["Lancaster | Outlines", "Lancaster | Highlight", "Upkeep | Highlight", "Upkeep | Path", "Upkeep | Sunk"]
+      "layersOff": ["Lancaster | Outlines", "Lancaster | Highlight", "Upkeep | Highlight", "Upkeep | Path"]
     }
   },
   {
@@ -1608,7 +1608,7 @@
     },
     "layerVisibility": {
       "layersOn": ["Lancaster | Outlines", "Upkeep | Highlight", "Mohne dam | Highlight"],
-      "layersOff": ["Lancaster","Lancaster | Highlight", "Upkeep", "Upkeep | Path", "Upkeep | Sunk"]
+      "layersOff": ["Lancaster","Lancaster | Highlight", "Upkeep", "Upkeep | Path"]
     }
   },
   {
@@ -1632,7 +1632,7 @@
     },
     "layerVisibility": {
       "layersOn": ["Lancaster | Outlines", "Upkeep | Highlight", "Mohne dam | Highlight"],
-      "layersOff": ["Lancaster", "Lancaster | Highlight", "Upkeep", "Upkeep | Path", "Upkeep | Sunk"]
+      "layersOff": ["Lancaster", "Lancaster | Highlight", "Upkeep", "Upkeep | Path"]
     }
   },
   {
@@ -1655,11 +1655,11 @@
         }
     },
     "layerVisibility": {
-      "layersOn": ["Lancaster | Highlight", "Upkeep | Highlight", "Mohne dam | Highlight", "Upkeep | Path", "Upkeep | Sunk"],
+      "layersOn": ["Lancaster | Highlight", "Upkeep | Highlight", "Mohne dam | Highlight", "Upkeep | Path"],
       "layersOff": ["Lancaster | Outlines", "Lancaster", "Upkeep"]
     },
     "timeSlider": {
-      "timeSliderStart": "1943-05-17T00:00:00Z",
+      "timeSliderStart": "1943-05-17T04:20:00Z",
       "timeSliderEnd": "1943-05-17T04:20:00Z",
       "timeSliderUnit": "minutes",
       "timeSliderStep": 5
