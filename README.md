@@ -53,9 +53,9 @@ Using ArcGIS StoryMaps and embedded maps created with the [ArcGIS Maps SDK for J
 
 ## Resources
 
-* [GitHub Markdown Reference](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-* [Esri Copyright Statement](https://github-admin.esri.com/doc/copyright.txt)
-* [Public Repository Guidelines](https://github-admin.esri.com/doc/public-repository-requirements-and-guidelines.html)
+* [Introducing Story Embeds via Script!](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/constituent-engagement/introducing-story-embeds-via-script) - ArcGIS Blog post explaining the script embedding technique used in this project.
+* [Storytelling with 3d models](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/constituent-engagement/storytelling-with-3d-models)
+* [3D object layer](https://www.esri.com/arcgis-blog/products/arcgis-online/3d-gis/3d-object-layer-a-comprehensive-overview)
 
 ## Issues
 
