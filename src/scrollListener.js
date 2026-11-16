@@ -113,11 +113,12 @@ const createIframeSrcObserver = (iframe) => {
 // When the element becomes docked (via 'docked' class), it records the scroll position
 // to begin tracking scroll progress. Undocks reset the tracking state.
 function setupDockingObserver(nodeSelector) {
-  const targetSelectorDocked = `${nodeSelector} > div > div[class*='jsx-'][class*='container'][class*='main']`;
+  // Support legacy classes and CSS modules without depending on generated hashes.
+  const targetSelectorDocked = `${nodeSelector} :is(.container, [class*="DockablePanel_container__"])`;
 
   waitForElement(targetSelectorDocked, (target) => {
     const observer = new MutationObserver(() => {
-      const currentlyDocked = target.classList.contains("docked");
+      const currentlyDocked = target.matches('.docked, [class*="DockablePanel_docked__"]');
 
       if (currentlyDocked && !isDocked) {
         isDocked = true;
